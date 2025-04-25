@@ -49,7 +49,8 @@ export const data = LandscapeSchema.make({
 		OfflineReads: { data: 'Full Support' },
 		OfflineWrites: { data: 'Local conflict resolution' },
 		DataSize: { data: 'Depends on the size of the shared data' },
-    OptimisticUpdates: { data: 'Yes' }
+    OptimisticUpdates: { data: 'Yes' },
+    LocalRefreshLatency: { data: '<1ms', comment: 'The in-memory data structures fire events instantaneously, without waiting for a database.' }
 	},
 	SynchronizationStrategy: {
 		FullOrPartialReplication: { data: ['Full Replication'] },
